@@ -27,6 +27,9 @@ public class Lab_06_03_RectangleInfo {
             trash.equals(in.nextLine());
             System.out.println("Invalid Entry");
         }
+        if (verticals == horizontals){
+            System.out.println("Are you sure this is a rectangle?");
+        }
         rectPeri = (horizontals + verticals) * 2;
         areaRect = horizontals * verticals;
         diagWork = (Math.pow(horizontals, 2)) + (Math.pow(verticals, 2));
